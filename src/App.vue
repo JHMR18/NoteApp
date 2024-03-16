@@ -37,7 +37,7 @@ const toggle_modal = () => {
     </div>
     <div class="container">
       <header>
-        <h1>Notes</h1>
+        <h1>Note App ni Jhomer HAHAHA</h1>
         <button class="header-button" @click="toggle_modal" >+</button>
       </header>
       <div class="cards-container">
