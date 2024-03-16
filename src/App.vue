@@ -12,6 +12,8 @@ const addnote= () => {
   notes.value.push(new_note.value)
   show_modal.value = false;
   show_note.value = true;
+  new_note.value = '';
+  
 }
 
 
@@ -28,7 +30,7 @@ const toggle_modal = () => {
   <main>
     <div class="overlay" v-if="show_modal" >
       <div class="modal">
-        <textarea name="note" id="note" cols="30" rows="10" v-model="new_note" >{{ new_note }}</textarea>
+        <textarea name="note" id="note" cols="30" rows="10" v-model="new_note" placeholder="Enter a new note">{{ new_note }}</textarea>
         <button class="add" @click="addnote">Add Note</button>
         <button class="close" @click="toggle_modal">close</button>
       </div>
